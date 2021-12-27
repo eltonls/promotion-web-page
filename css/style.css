@@ -1,0 +1,65 @@
+/* GENERAL RULES */
+html {
+  font-size: 62.5%; /* REM ~ 10px */
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Lato', sans-serif;
+}
+
+main {
+  padding: 1.5rem;
+}
+
+/* STYLING: */
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.nav > .btn {
+    width: 50%;
+}
+
+.btn{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Lato', sans-serif;
+}
+
+.btn--filter{
+    padding: .5rem .8rem;
+    border: solid 1.5px #C4CBCA; 
+    color: #C4CBCA;
+}
+.btn--filter:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.btn--filter:last-child {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FLAGS */
+.inactive{
+    background-color: #C4CBCA;
+    color: #fff;
+}
