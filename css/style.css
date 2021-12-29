@@ -18,18 +18,35 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+
+    margin-bottom: 1.5rem;
 }
 
 .nav > .btn {
     width: 50%;
 }
 
+/* Typography */
+.heading-tertiary{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Buttons: */
 .btn{
     background-color: transparent;
     outline: none;
     border: none;
     border-radius: 3px;
     font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+.btn:link,
+.btn:visited{
+    text-decoration: none;
 }
 
 .btn--filter{
@@ -46,20 +63,55 @@ main {
     border-top-left-radius: 0;
 }
 
+.btn--white,
+.btn--black{
+    border: solid 1.5px #C4CBCA;
+    padding: 1rem 2.5rem;
+}
+
+.btn--white {
+    color: #C4CBCA;
+}
+.btn--black {
+    color: #fff;
+    background-color: #17202A;
+}
 
 
-
-
-
-
-
-
-
-
-
+/* Card */
+.promo-card{
+    background-color: #F4F6F6;
+    min-height: 25rem;
+}
+.promo-card:not(:last-child){
+    margin-bottom: 1.5rem;
+}
+.promo-card__img-box{
+    width: 100%;
+    min-height: 35%;
+}
+.promo-card__img{
+    width: 100%;
+}
+.promo-card__desc{
+    padding: 1.5rem
+}
+.promo-card__btn-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.promo-card__btn-box > .btn{
+    font-size: 1.5rem;
+}
 
 /* FLAGS */
 .inactive{
     background-color: #C4CBCA;
     color: #fff;
+}
+
+.invisible {
+    display: none;
 }
